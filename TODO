@@ -1,0 +1,10 @@
+Version 0.01 is a bare bones release, enough to let me do simple web maps.
+
+Nice additions would include:
+
+-- Incorporation of the general projection and plot labelling/gridding software WCSLIB.
+   (http://www.atnf.csiro.au/computing/software/wcslib.html).  This seems like a good
+   package.  It would require a perl/PDL interface to the FORTRAN routines in this library.
+
+
+

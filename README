@@ -1,0 +1,48 @@
+PDL::Graphics::PLplot::Map:
+
+A PDL interface to the GMT (Generic Mapping Tools).  This allows one to access
+a detailed coastline, river, lake and national boundary database covering the
+entire world.  
+
+This package includes a function, 'fetch', which will give raw lon/lat PDLs from
+the GMT database.  It also includes the PDL::Graphics::PLplot compatible routines:
+
+worldmap   -- Draw a world map using PGPLOT
+map_plot   -- Add points or lines to an existing world map, including map projection
+
+It currently supports two projects:  
+
+-- Linear 
+-- Azimuthal Equidistant
+
+But others can easily be added.
+
+The following are required for installation:
+
+-- perl 5.5 or later
+-- PDL v2.1 or later with bad value support compiled in (Set WITH_BADVAL => 1 in perldl.conf)
+-- the PLplot plotting package (http://plplot.sourceforge.net/)
+-- the PLplot perl interface PDL::Graphics::PLplot, see CPAN.
+-- the netCDF library (see http://www.unidata.ucar.edu/packages/netcdf/index.html)
+
+INSTALLATION:
+
+Installation should be the normal:
+
+perl Makefile.PL
+make
+make test
+
+(as root)
+make install
+
+Best of luck!
+
+Doug Hunt
+dhunt@ucar.edu
+
+
+
+
+
+
